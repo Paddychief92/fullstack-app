@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
-const express = require('express');
 const mongoose = require('mongoose');
-const MongoClient = require('mongodb').MongoClient;
+const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const uri = "mongodb+srv://patrickmeade4:<password>@cluster0.lac0cfm.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://patrickmeade4:DvXduHQBohYJy63B@cluster0.lac0cfm.mongodb.net/?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 client.connect(err => {
